@@ -1,0 +1,122 @@
+### Tabel Barang
+GET http://localhost:5000/barang
+
+###
+GET http://localhost:5000/barang/15
+
+###
+POST http://localhost:5000/barang
+Content-Type: application/json
+
+{
+    "nama_barang": "",
+    "supplier": "Sea Save",
+    "harga_jual": "10",
+    "Stok": "50"
+}
+
+###
+PUT  http://localhost:5000/barang/14
+Content-Type: application/json
+
+{
+    "nama_barang": "HT",
+    "supplier": "Radio",
+    "harga_jual": "10000",
+    "Stok": "4"
+}
+
+###
+DELETE http://localhost:5000/barang/12
+
+###Tabel Supplier
+GET http://localhost:5000/supplier
+
+###
+GET http://localhost:5000/supplier/1
+
+###
+POST http://localhost:5000/supplier
+Content-Type: application/json
+
+{
+    "nama_supplier": "Dunia Motor",
+    "alamat": "Indo",
+    "kontak": "08192873"
+}
+
+###
+PUT http://localhost:5000/supplier/2
+Content-Type: application/json
+
+{
+    "nama_supplier": "Bara Energy",
+    "alamat": "Indonesia",
+    "kontak": "08520000112"
+}
+
+###
+DELETE http://localhost:5000/supplier/2
+
+### TABEL KERANJANG
+GET http://localhost:5000/keranjang
+
+###
+GET http://localhost:5000/keranjang/2
+
+###
+POST http://localhost:5000/keranjang
+Content-Type: application/json
+
+{
+    "id_barang": "1",
+    "nama_barang": "Radio Kapal",
+    "qty": "1",
+    "harga": "21000",
+    "jumlah": "1",
+    "total": "1",
+    "id_register": "1"
+}
+
+###
+PUT http://localhost:5000/keranjang/2
+Content-Type: application/json
+
+{
+    "id_barang": "1",
+    "nama_barang": "Radar Kapal",
+    "qty": "1",
+    "harga": "50000",
+    "jumlah": "1",
+    "total": "1",
+    "id_register": "1"
+}
+
+###
+DELETE http://localhost:5000/keranjang/2
+
+### REGISTER
+GET http://localhost:5000/register
+
+###
+GET http://localhost:5000/register/1
+
+###
+POST  http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "nama_depan": "Budi",
+    "nama_belakang": "Ahmad",
+    "jenis_kelamin": "Laki-laki",
+    "no_hp": "085100909000",
+    "tgl_lahir": "10 Juni",
+    "email": "budi@gmail.com",
+    "alamat": "Tanjung"
+}
+
+###
+DELETE http://localhost:5000/register/2
+
+###
+GET http://localhost:5000/register/mhh
